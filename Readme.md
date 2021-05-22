@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павлович Дубровин Дмитрий](https://up.htmlacademy.ru/htmlcss/31/user/1819647).
-* Наставник: `Arthur Litovko`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
