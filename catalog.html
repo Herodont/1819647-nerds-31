@@ -31,27 +31,28 @@
 				<fieldset>
 					<legend>Стоимость</legend>
 					<input type="range">
+					<input type="range">
 					<br>
 					От
-					<input type="text" id="from" value="0" size="5">
+					<input type="number" id="from" value="0">
 					До
-					<input type="text" id="to" value="15 000" size="5">
+					<input type="number" id="to" value="15000">
 				</fieldset>
 				<fieldset>
 					<legend>Сетка</legend>
 					<ul>
 						<li>
-							<input type="radio" name="Adaptive" value="Adaptive">
-							<label>Адаптивная</label>
+							<input type="radio" name="Grid" value="Adaptive">
+							<label for="Adaptive">Адаптивная</label>
 						</li>
 						<li>
-							<input type="radio" name="fixed" value="fixed">
-							<label>Фиксированная</label>
+							<input type="radio" name="Grid" value="Fixed">
+							<label for="Fixed">Фиксированная</label>
 						</li>
 						
 						<li>
-							<input type="radio" name="adaptive" value="adaptive">
-							<label>Резиновая</label>
+							<input type="radio" name="Grid" value="Adaptive">
+							<label for="Adaptive">Резиновая</label>
 						</li>
 					</ul>
 					<br>
@@ -86,101 +87,91 @@
 		</section>
 		<section>
 			<h2>Сортировка</h2>
-			<fieldset name="sorting">
-				<legend>Сортировать по:</legend>
-				<button type="submit" id="Cost">По цене</button>
-				<button type="submit" id="Type">По типу</button>
-				<button type="submit" id="Name">По названию</button>
-				<button type="submit" id="Up"></button>
-				<button type="submit" id="Down"></button>
-			</fieldset>
+			<legend>Сортировать по:</legend>
+			<button type="submit" id="Cost">По цене</button>
+			<button type="submit" id="Type">По типу</button>
+			<button type="submit" id="Name">По названию</button>
+			<button type="submit" id="Up">По возрастанию</button>
+			<button type="submit" id="Down">По убыванию</button>
 		</section>
 		<section>
 			<h2>Список шаблонов</h2>
 			<ul>
 				<li>
-					<a href="product.html">
-						<h3>Шаблон Sedona</h3>
-						<p>
-							<img src="#" width="358" height="578" alt="Скриншот главной сайта Sedona">
-						</p>
-					</a>
-					<p>Sedona</p>
-					<p>Информационный сайт для туристов</p>
-					<p>
-						9 900 ₽
-						<button type="button">Купить</button>
-					</p>
+					<div>
+						<h3>
+							<a href="product.html">
+								Sedona
+							</a>
+						</h3>
+						<p>Информационный сайт для туристов</p>
+						<button type="button"><span>Купить </span>9 900 ₽</button>
+					</div>
+					<img src="#" width="358" height="578" alt="Скриншот главной сайта Sedona">
 				</li>
 				<li>
-					<a href="product.html">
-						<h3>Шаблон Pink App</h3>
-						<p>
-							<img src="#" width="358" height="578" alt="Скриншот главной сайта Pink App">
-						</p>
-					</a>
-					<p>Pink App</p>
-					<p>Продуктовый лендинг приложения для iOS и Android</p>
-					<p>
-						9 900 ₽
-						<button type="button">Купить</button>
-					</p>
+
+					<div>
+						<h3>
+							<a href="product.html">
+								Pink App
+							</a>
+						</h3>
+						<p>родуктовый лендинг приложения для iOS и Android</p>
+						<button type="button"><span>Купить </span>9 900 ₽</button>
+					</div>
+					<img src="#" width="358" height="578" alt="Скриншот главной сайта Pink App">
 				</li>
 				<li>
-					<a href="product.html">
-						<h3>Barbershop</h3>
-						<p>
-							<img src="#" width="358" height="578" alt="Скриншот главной сайта Barbershop">
-						</p>
-					</a>
-					<p>Barbershop</p>
-					<p>Сайт салона красоты. Для мужчин, да.</p>
-					<p>
-						9 900 ₽
-						<button type="button">Купить</button>
-					</p>
+					<div>
+						<h3>
+							<a href="product.html">
+								Шаблон Barbershop
+							</a>
+						</h3>
+						<p>Сайт салона красоты. Для мужчин, да.</p>
+						<button type="button"><span>Купить </span>9 900 ₽</button>
+					</div>
+					<img src="#" width="358" height="578" alt="Скриншот главной сайта Шаблон Barbershop">
 				</li>
 				<li>
-					<a href="product.html">
-						<h3>MISHKA</h3>
-						<p>
-							<img src="#" width="358" height="578" alt="Скриншот главной сайта MISHKA">
-						</p>
-					</a>
-					<p>MISHKA</p>
-					<p>Интернет-магазин вязаных игрушек</p>
-					<p>
-						9 900 ₽
-						<button type="button">Купить</button>
-					</p>
+					<div>
+						<h3>
+							<a href="product.html">
+								MISHKA
+							</a>
+						</h3>
+						<p>Интернет-магазин вязаных игрушек</p>
+						<button type="button"><span>Купить </span>9 900 ₽</button>
+					</div>
+					<img src="#" width="358" height="578" alt="Скриншот главной сайта MISHKA">
 				</li>
 				<li>
-					<a href="product.html">
-						<h3>A Plus</h3>
-						<p>
-							<img src="#" width="358" height="578" alt="Скриншот главной сайта A Plus">
-						</p>
-					</a>
-					<p>A Plus</p>
-					<p>Лендинг курсов повышения квалификации</p>
-					<p>
-						9 900 ₽
-						<button type="button">Купить</button>
-					</p>
+
+
+					<div>
+						<h3>
+							<a href="product.html">
+								A Plus
+							</a>
+						</h3>
+						<p>Лендинг курсов повышения квалификации</p>
+						<button type="button"><span>Купить </span>9 900 ₽</button>
+					</div>
+					<img src="#" width="358" height="578" alt="Скриншот главной сайта A Plus">
+
 				</li>
 				<li>
-					<a href="product.html">
-						<h3>КВАСТ</h3>
-						<p>
-							<img src="#" width="358" height="578" alt="Скриншот главной сайта КВАСТ">
-						</p>
-					</a>
-					<p>КВАСТ</p>
-					<p>Промо-сайт производителя крафтового кваса</p>
-					<p>
-						9 900 ₽
-						<button type="button">Купить</button>
-					</p>
+					<div>
+						<h3>
+							<a href="product.html">
+								КВАСТ
+							</a>
+						</h3>
+						<p>Промо-сайт производителя крафтового кваса</p>
+						<button type="button"><span>Купить </span>9 900 ₽</button>
+					</div>
+					<img src="#" width="358" height="578" alt="Скриншот главной сайта КВАСТ">
 				</li>
 			</ul>
 			<ul>
