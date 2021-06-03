@@ -1,0 +1,96 @@
+.page {
+  font-family: "Roboto", "Arial", sans-serif;
+  min-width: 960px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400px;
+}
+.main-header{
+	background-color: #EEEEEE;
+}
+.site-navigation {
+	list-style: none;
+}
+.nav-item{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	align-items: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style: none;
+}
+.basket-button {
+	border: 	;
+}
+.title-to-hide{
+display: none
+}
+.slider-img {
+	width: 760px;
+	height: 431px;
+}
+.slider-title{
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+}
+.services-title{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.slider-description{
+font-style: normal;
+font-weight: normal;
+align-items: center;
+}
+.services-description{
+	width: 400px;
+	height: 49px;
+	left: 140px;
+	top: 328px;
+}
+.slider-button {
+	width: 240px;
+	height: 50px;
+	left: 140px;
+	top: 415px;
+	background: #FB565A;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.button-order1 {
+	width: 160px;
+	height: 50px;
+	left: 140px;
+	top: 922px;
+	background: #FB565A;
+	border-radius: 3px;
+}
+.button-order2 {
+	width: 160px;
+	height: 50px;
+	left: 140px;
+	top: 922px;
+	background: #00CA74;
+	border-radius: 3px;
+}
+.button-order3 {
+	width: 160px;
+	height: 50px;
+	left: 140px;
+	top: 922px;
+	background: #EFC849;
+	border-radius: 3px;
+}
+.about-quote{
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
