@@ -2,7 +2,6 @@
   font-family: "Roboto", "Arial", sans-serif;
   min-width: 960px;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400px;
 }
 .main-header{
@@ -18,10 +17,7 @@
 	align-items: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	list-style: none;
-}
-.basket-button {
-	border: 	;
+	color: #666;
 }
 .title-to-hide{
 display: none
@@ -49,48 +45,97 @@ align-items: center;
 .services-description{
 	width: 400px;
 	height: 49px;
-	left: 140px;
-	top: 328px;
 }
 .slider-button {
 	width: 240px;
 	height: 50px;
-	left: 140px;
-	top: 415px;
 	background: #FB565A;
 	border-radius: 3px;
-	font-weight: 500;
-	font-size: 16px;
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
 .button-order1 {
 	width: 160px;
 	height: 50px;
-	left: 140px;
-	top: 922px;
+	color: #FFF;
 	background: #FB565A;
 	border-radius: 3px;
+	text-transform: uppercase;
+	}
+.button-adress {
+	width: 219px;
+	height: 50px;
+	color: #FFF;
+	background: #FB565A;
+	border-radius: 3px;
+	text-transform: uppercase;
 }
 .button-order2 {
 	width: 160px;
 	height: 50px;
-	left: 140px;
-	top: 922px;
+	color: #FFF;
 	background: #00CA74;
 	border-radius: 3px;
+	text-transform: uppercase;
 }
 .button-order3 {
 	width: 160px;
 	height: 50px;
-	left: 140px;
-	top: 922px;
+	color: #FFF;
 	background: #EFC849;
 	border-radius: 3px;
+	text-transform: uppercase;
 }
 .about-quote{
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contacs-phone{
+	text-decoration: none;
+	color: #666;
+}
+.address-streat{
+	text-decoration: none;
+	color: #666;
+}
+.footer-slogan-top {
+	font-size: 36px;
+	line-height: 36px;
+}
+.footer-slogan-bot{
+		line-height: 22px;
+}
+
+.form-button{
+	width: 259px;
+	height: 50px;
+	background: #FB565A;
+	border-radius: 3px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.feature-number {
+	font-size: 45px;
+}
+.modal-title{
+
+	font-size: 45px;
+}
+.modal-subtitle{
+	font-weight: bold;
+	Co
+}
+.name-name {
+	width: 360px;
+	height: 50px;
+}
+.form-email{
+	width: 360px;
+	height: 50px;
+}
+.form-text{
+	width: 760px;
+	height: 145px;
 }
