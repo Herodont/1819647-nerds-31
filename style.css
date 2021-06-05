@@ -13,14 +13,20 @@
 .nav-item{
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 30px;
 	align-items: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #666;
 }
-.title-to-hide{
-display: none
+.visually-hidden{
+ position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.slider{
+	background-color: #EEEEEE;
 }
 .slider-img {
 	width: 760px;
@@ -29,12 +35,10 @@ display: none
 .slider-title{
 	font-weight: 500;
 	font-size: 55px;
-	line-height: 55px;
 }
 .services-title{
 	font-weight: bold;
 	font-size: 24px;
-	line-height: 30px;
 	text-transform: uppercase;
 }
 .slider-description{
@@ -89,8 +93,6 @@ align-items: center;
 .about-quote{
 	font-weight: 500;
 	font-size: 45px;
-	line-height: 45px;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .contacs-phone{
 	text-decoration: none;
@@ -102,7 +104,6 @@ align-items: center;
 }
 .footer-slogan-top {
 	font-size: 36px;
-	line-height: 36px;
 }
 .footer-slogan-bot{
 		line-height: 22px;
@@ -116,6 +117,10 @@ align-items: center;
 	color: #FFF;
 	text-transform: uppercase;
 }
+.feature-slogan {
+	font-weight: bold;
+	text-transform: uppercase;
+}
 .feature-number {
 	font-size: 45px;
 }
@@ -124,8 +129,7 @@ align-items: center;
 	font-size: 45px;
 }
 .modal-subtitle{
-	font-weight: bold;
-	Co
+	font-weight: bold;	
 }
 .name-name {
 	width: 360px;
@@ -138,4 +142,10 @@ align-items: center;
 .form-text{
 	width: 760px;
 	height: 145px;
+}
+.socials-item{
+	background-color: #E1E1E1;
+}
+.cases-item{
+	text-decoration: none;
 }
