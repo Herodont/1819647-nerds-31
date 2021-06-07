@@ -215,10 +215,7 @@
 .cases-img:active{
 	opacity: 0.1;
 }
-.address-streat{
-	text-decoration: none;
-	color: #666;
-}
+
 .button{
 	border-radius: 3px;
 	text-transform: uppercase;
@@ -228,3 +225,7 @@
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(255,255,255,.3);
 }	
+.address-streat{
+	font-style: normal;
+	color: #666;
+}
