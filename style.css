@@ -107,15 +107,13 @@
 .about-quote{
 	font-weight: 500;
 	font-size: 45px;
+	line-height: 45px;
 }
 .contacs-phone{
 	text-decoration: none;
 	color: #666;
 }
-.address-streat{
-	text-decoration: none;
-	color: #666;
-}
+
 .footer-slogan-top {
 	font-size: 36px;
 }
@@ -161,16 +159,6 @@
 	text-decoration: none;
 	color: rgba(0,0,0, 0.1);
 }
-#button{
-	border-radius: 3px;
-	text-transform: uppercase;
-	border: none;
-}	
-#button:active{
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: rgba(255,255,255,.3);
-}	
-
 .slider-button:hover{
 	background-color:#E74246;
 }
@@ -227,3 +215,16 @@
 .cases-img:active{
 	opacity: 0.1;
 }
+.address-streat{
+	text-decoration: none;
+	color: #666;
+}
+.button{
+	border-radius: 3px;
+	text-transform: uppercase;
+	border: none;
+}
+.button-adress:active{
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	color: rgba(255,255,255,.3);
+}	
