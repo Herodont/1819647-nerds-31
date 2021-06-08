@@ -229,3 +229,49 @@
 	font-style: normal;
 	color: #666;
 }
+.h1{
+	font-size: 55px;
+	line-height: 55px;
+}
+.goods-button{
+	width: 200px;
+	height: 50px;
+	background: #FB565A;
+	color: #FFFFFF;
+}
+.fieldset-cost{
+	background-color: #EEEEEE;
+}
+.list{
+	list-style-type: none;
+}
+.button-show{
+	width: 260px;
+	height: 50px;
+	background: #EEEEEE;
+}
+.button-show:hover{
+	background: #DFDFDF;
+}
+.button-show:active{
+	background: #D5D5D5;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	color: rgba(0, 0, 0, 0.3);;
+}
+.sort-button{
+all: unset;
+text-transform: uppercase;
+opacity: 0.3
+}
+.sort-button:hover{
+	opacity: 0.6;
+}
+.sort-button:active{
+	opacity: 1;
+}
+.grid {
+	border: none;
+}
+.feature{
+	border: none;
+}
