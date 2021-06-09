@@ -1,3 +1,21 @@
+:root {
+--basic-black: #000000;
+--red: #FB565A;
+--green: #00CA74;
+--yellow: #EFC849;
+--grey: #EEEEEE;
+--white: #FFFFFF;
+--fog-gray: #666;
+--lite-grey: #E1E1E1;
+--fog-red: #E74246;
+--fog-dark-red: #D7373B;
+--some-green: #00BC6C;
+--some-dark-green: #00AA62;
+--some-fog-yellow: #EAB534;
+--some-dark-yellow:  #E5A722;
+--another-gray: #DFDFDF;
+--another-other-gray: #D5D5D5;
+}
 .page {
 	font-family: "Roboto", "Arial", sans-serif;
 	min-width: 960px;
@@ -5,7 +23,7 @@
 	font-weight: 400px;
 }
 .main-header{
-	background-color: #EEEEEE;
+	background-color: var(--grey);
 }
 .main-header-logo:hover{
 	opacity: .7;
@@ -22,10 +40,10 @@
 	align-items: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #000;
+	color: var(--basic-black);
 }
 .nav-item:hover{
-	color: #FB565A;
+	color: var(--red);
 
 }
 .nav-item:active{
@@ -35,7 +53,7 @@
 	text-decoration: underline;
 }	
 .basket-button:hover{
-	color: #FB565A;
+	color: var(--red);
 
 }
 .basket-button:active{
@@ -49,7 +67,7 @@
 	margin: -1px;
 }
 .slider{
-	background-color: #EEEEEE;
+	background-color: var(--grey);
 }
 .slider-img {
 	width: 760px;
@@ -76,33 +94,33 @@
 .slider-button {
 	width: 240px;
 	height: 50px;
-	background: #FB565A;
-	color: #FFFFFF;
+	background:var(--red);
+	color: var(--white);
 }
 .button-order1 {
 	width: 160px;
 	height: 50px;
-	color: #FFF;
-	background: #FB565A;
+	color: var(--white);
+	background: var(--red);
 }
 .button-adress {
 	width: 219px;
 	height: 50px;
-	color: #FFF;
-	background: #FB565A;
+	color: var(--white);
+	background: var(--red);
 	
 }
 .button-order2 {
 	width: 160px;
 	height: 50px;
-	color: #FFF;
-	background: #00CA74;
+	color: var(--white);
+	background: var(--green);
 }
 .button-order3 {
 	width: 160px;
 	height: 50px;
-	color: #FFF;
-	background: #EFC849;
+	color: var(--white);
+	background: var(--yellow);
 }
 .about-quote{
 	font-weight: 500;
@@ -111,7 +129,7 @@
 }
 .contacs-phone{
 	text-decoration: none;
-	color: #666;
+	color: var(--fog-gray);
 }
 
 .footer-slogan-top {
@@ -123,8 +141,8 @@
 .form-button{
 	width: 259px;
 	height: 50px;
-	background: #FB565A;
-	color: #FFF;
+	background:var(--red);
+	color: var(--white);
 }
 .feature-slogan {
 	font-weight: bold;
@@ -153,50 +171,50 @@
 	height: 145px;
 }
 .socials-item{
-	background-color: #E1E1E1;
+	background-color: var(--lite-grey);
 }
 .cases-item{
 	text-decoration: none;
 	color: rgba(0,0,0, 0.1);
 }
 .slider-button:hover{
-	background-color:#E74246;
+	background-color:var(--fog-red:);
 }
 .slider-button:active{
-	background: #D7373B;
+	background: var(--fog-dark-red);
 
 }
 .button-order1:hover{
-	background-color:#E74246;
+	background-color:var(--fog-red);
 }
 .button-order1:active{
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(255,255,255,.3);
-	background-color:#D7373B;
+	background-color:var(--fog-dark-red);
 }		
 .button-order2:hover{
-	background-color:#00BC6C;
+	background-color:var(--some-green);
 }
 .button-order2:active{
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(255,255,255,.3);
-	background-color:#00AA62;
+	background-color:var(--some-dark-green);
 }
 .button-order3:hover{
-	background-color:#EAB534;
+	background-color:var(--some-fog-yellow);
 }
 .button-order3:active{
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(255,255,255,.3);
-	background-color:#E5A722;
+	background-color:var(--some-dark-yellow);
 }
 .button-adress:hover{
-	background-color:#E74246;
+	background-color:var(--fog-red);
 }
 .button-adress:active{
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(255,255,255,.3);
-	background-color:#D7373B;
+	background-color: var(--fog-dark-red);
 }		
 .form-button:hover{
 	background-color:#E74246;
@@ -204,7 +222,7 @@
 .form-button:active{
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(255,255,255,.3);
-	background-color:#D7373B;
+	background-color: var(--fog-dark-red);
 }
 .cases-img{
 	opacity: 0.2;
@@ -227,7 +245,7 @@
 }	
 .address-streat{
 	font-style: normal;
-	color: #666;
+	color: var(--fog-gray);
 }
 .h1{
 	font-size: 55px;
@@ -237,10 +255,10 @@
 	width: 200px;
 	height: 50px;
 	background: #FB565A;
-	color: #FFFFFF;
+	color: var(--white);
 }
 .fieldset-cost{
-	background-color: #EEEEEE;
+	background-color: var(--grey);
 }
 .list{
 	list-style-type: none;
@@ -248,13 +266,13 @@
 .button-show{
 	width: 260px;
 	height: 50px;
-	background: #EEEEEE;
+	background: var(--grey);
 }
 .button-show:hover{
-	background: #DFDFDF;
+	background: var(--another-gray);
 }
 .button-show:active{
-	background: #D5D5D5;
+	background: var(--another-other-gray);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: rgba(0, 0, 0, 0.3);;
 }
@@ -274,4 +292,10 @@ opacity: 0.3
 }
 .feature{
 	border: none;
+}
+.sites{
+	list-style-type: none;
+}
+.sites-title{
+		text-decoration: none;
 }
