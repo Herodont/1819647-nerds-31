@@ -130,6 +130,7 @@
 .contacs-phone{
 	text-decoration: none;
 	color: var(--fog-gray);
+	font-style: normal;
 }
 
 .footer-slogan-top {
@@ -172,6 +173,8 @@
 }
 .socials-item{
 	background-color: var(--lite-grey);
+	border-radius: 50%;
+
 }
 .cases-item{
 	text-decoration: none;
@@ -295,7 +298,20 @@ opacity: 0.3
 }
 .sites{
 	list-style-type: none;
+
 }
 .sites-title{
 		text-decoration: none;
+		color: var(--basic-black);
+}
+.sites-p{
+	color: var(--fog-gray);
+}
+.page-numbers{
+	list-style-type: none;
+
+}
+.page-number-item{
+	text-decoration: none;
+	color: var(--basic-black);
 }
