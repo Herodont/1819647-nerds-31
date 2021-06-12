@@ -259,9 +259,6 @@
 	background: #FB565A;
 	color: var(--white);
 }
-.fieldset-cost{
-	background-color: var(--grey);
-}
 .list{
 	list-style-type: none;
 }
@@ -313,4 +310,29 @@ opacity: 0.3
 .page-number-item{
 	text-decoration: none;
 	color: var(--basic-black);
+}
+.background-h1{
+	background-color: var(--grey);		
+	height:155px;
+	margin: 0 auto;
+}
+.h1{
+	margin: 0 auto;
+		text-align: center;
+	}
+.fieldset-cost{
+		border: none;
+}
+.cost-slider{
+	background-color: var(--grey);
+	width: 300px;
+	height: 80px;
+}
+.cost-input{
+	width: 80px;
+	height: 38px;
+	background-color: var(--grey);
+	border: none;
+	border-radius: 3px;
+	text-align: center;
 }

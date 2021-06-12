@@ -33,34 +33,39 @@
 		</nav>
 	</header>
 	<main>
+		<div class="background-h1">
 		<h1 class="h1">Магазин готовых шаблонов</h1>
+	</div>
 		<section class="filter-conf">
 			<form action="https://echo.htmlacademy.ru/" method="get">
 				<h2 class="visually-hidden">Фильтр</h2>
+
 				<fieldset class="fieldset-cost">
 					<legend>Стоимость</legend>
+					<div class="cost-slider">
+					<input type="range">	
 					<input type="range">
-					<input type="range">
+					</div>
 					<br>
 					От
-					<input type="number" id="from" value="0">
+					<input class="cost-input" type="number" id="from" value="0">
 					До
-					<input type="number" id="to" value="15000">
+					<input class="cost-input" type="number" id="to" value="15 000">
 				</fieldset>
 				<fieldset class="grid">
 					<legend class="fieldset-grid">Сетка</legend>
 					<ul class="list">
 						<li>
-							<input type="radio" name="grid" value="Adaptive">
-							<label for="Adaptive">Адаптивная</label>
+							<input id="adaptive" type="radio" name="grid" value="Adaptive">
+							<label for="adaptive">Адаптивная</label>
 						</li>
 						<li>
-							<input type="radio" name="grid" value="Fixed">
+							<input id="fixed" type="radio" name="grid" value="Fixed">
 							<label for="Fixed">Фиксированная</label>
-						</li>
+						</li>	
 						
 						<li>
-							<input type="radio" name="grid" value="Adaptive">
+							<input id="gum" type="radio" name="grid" value="Gum">
 							<label for="Adaptive">Резиновая</label>
 						</li>
 					</ul>
@@ -70,24 +75,24 @@
 					<legend class="fildset-feature">Особенности</legend>
 					<ul class="list">
 						<li>
-							<input class="checkbox" type="checkbox" id="slider" name="slider" value="slider">
-							<label for="Slider">Слайдер</label>
+							<input class="checkbox" type="checkbox" id="slider" name="slider" value="+">
+							<label for="slider">Слайдер</label>
 						</li>
 						<li>
-							<input class="checkbox" type="checkbox" id="advantages" name="advantages" value="advantages">
-							<label for="Advantages">Блок преимуществ</label>
+							<input class="checkbox" type="checkbox" id="advantages" name="advantages" value="+">
+							<label for="advantages">Блок преимуществ</label>
 						</li>
 						<li>
-							<input class="checkbox" type="checkbox" id="news" name="news" value="news">
-							<label for="News">Новости</label>
+							<input class="checkbox" type="checkbox" id="news" name="news" value="+">
+							<label for="news">Новости</label>
 						</li>
 						<li>
-							<input class="checkbox" type="checkbox" id="gallery" name="gallery" value="gallery">
-							<label for="Gallery">Галерея</label>
+							<input class="checkbox" type="checkbox" id="gallery" name="gallery" value="+">
+							<label for="gallery">Галерея</label>
 						</li>
 						<li>
-							<input type="checkbox" id="basket" name="basket" value="basket">
-							<label for="Basket">Корзина</label>
+							<input type="checkbox" id="basket" name="basket" value="+">
+							<label for="basket">Корзина</label>
 						</li>
 					</ul>
 				</fieldset>
