@@ -20,7 +20,7 @@
 	font-family: "Roboto", "Arial", sans-serif;
 	min-width: 960px;
 	font-size: 16px;
-	font-weight: 400px;
+	font-weight: normal;
 }
 .main-header{
 	background-color: var(--grey);
@@ -299,9 +299,12 @@ opacity: 0.3
 .sites-title{
 		text-decoration: none;
 		color: var(--basic-black);
+		padding-top: 26px;
+		text-transform: uppercase;
 }
 .sites-p{
 	color: var(--fog-gray);
+	
 }
 .page-numbers{
 	list-style-type: none;
@@ -310,6 +313,8 @@ opacity: 0.3
 .page-number-item{
 	text-decoration: none;
 	color: var(--basic-black);
+	text-transform: uppercase;
+	background-color: var(--grey);
 }
 .background-h1{
 	background-color: var(--grey);		
@@ -335,4 +340,14 @@ opacity: 0.3
 	border: none;
 	border-radius: 3px;
 	text-align: center;
+}
+.goods-item-text{
+	background-color: var(--grey);
+	text-align: center;
+	width: 360px;
+	height: 231px;
+}
+.goods-item{
+	width: 359px;
+
 }
