@@ -32,6 +32,7 @@
 	background-color: var(--grey);
 	outline: 5px solid green;
 	outline-offset: -5px;
+	display: block;
 }
 .container{
 		outline: 5px solid darkred;
@@ -55,6 +56,8 @@
 }
 .site-navigation {
 	list-style: none;
+	display: flex;
+	margin-left: 46px;
 }
 .nav-item{
 	font-weight: 500;
@@ -63,6 +66,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--basic-black);
+	margin-right: 46px;
 }
 .nav-item:hover{
 	color: var(--red);
@@ -307,7 +311,7 @@ opacity: 0.3
 .sort-button:active{
 	opacity: 1;
 }
-.grid {
+.grid{
 	border: none;
 }
 .feature{
@@ -318,10 +322,10 @@ opacity: 0.3
 
 }
 .sites-title{
-		text-decoration: none;
-		color: var(--basic-black);
-		padding-top: 26px;
-		text-transform: uppercase;
+	text-decoration: none;
+	color: var(--basic-black);
+	padding-top: 26px;
+	text-transform: uppercase;
 }
 .sites-p{
 	color: var(--fog-gray);
@@ -345,6 +349,7 @@ opacity: 0.3
 .h1{
 	margin: 0 auto;
 		text-align: center;
+		 grid-column: 1 / -1;
 	}
 .fieldset-cost{
 		border: none;
@@ -402,4 +407,33 @@ display: grid;
 .main-footer{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+.basket{
+	display: flex;	
+}
+.filter-conf{
+	display: grid;
+}
+.page-catalog{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+.sorting{
+ ;
+}
+.sorting-h{
+	margin-left: 140px;
+	margin-right: 218px;
+	margin-top: 0px;
+
+}
+.sort-button{
+margin-right: 25px;
+}
+.goods{
+	display: grid;
+}
+.goods-item{
+	display: grid;
 }
