@@ -45,8 +45,11 @@
 	outline-offset: -5px;
 
 }
+.wraper{
+	display: flex;
+}
 .main-navigation{
-	display: grid;
+	display: flex;
 	justify-content: stretch;
 }
 .main-header-logo:hover{
@@ -59,6 +62,7 @@
 	list-style: none;
 	display: flex;
 	margin-left: 46px;
+	align-items: center;
 }
 .nav-item{
 	font-weight: 500;
@@ -80,7 +84,10 @@
 }	
 .basket-button:hover{
 	color: var(--red);
-
+}
+.basket{
+display: flex;
+align-items: center;
 }
 .basket-button:active{
 	opacity: .3;
@@ -395,6 +402,9 @@ width: 940px;
 margin: 0 auto;
 padding: 0 10px;
 justify-self: center;
+display: flex;
+justify-content: center;
+
 }
 
 .services{
