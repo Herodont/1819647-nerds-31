@@ -32,6 +32,8 @@
 	background-color: var(--grey);
 	display: flex;
 	justify-content: space-evenly;
+	    margin-bottom: 53px;
+    min-height: 307px;
 }
 .main-footer{
 	display: flex;
@@ -43,6 +45,7 @@
 .main-navigation{
 	display: flex;
 	justify-content: stretch;
+	align-items: flex-start;
 }
 .main-header-logo:hover{
 	opacity: .7;
@@ -53,7 +56,6 @@
 .site-navigation {
 	list-style: none;
 	display: flex;
-	margin-left: 46px;
 	align-items: center;
 }
 .nav-item{
@@ -432,7 +434,7 @@ display: grid;
   align-content: start;
 }
 .sorting{
- 
+ display: flex;
 }
 .sorting-h{
 	margin-left: 140px;
@@ -457,8 +459,9 @@ margin-right: 25px;
 	display: grid;
 	align-content: center;
 	grid-auto-flow: column;
-		grid-auto-columns: 81px;
+	grid-auto-columns: 81px;
 	grid-auto-rows: 81px;
+	gap: 9px;
 }
 .numeric{
 	font-weight: bold
@@ -497,9 +500,6 @@ margin-right: 25px;
 	display: grid;
 	grid-row: 1/ span 2;
 }
-.sorting{
-	display: grid;
-	grid-column: 2;
 }
 .goods{
 	display: grid;
@@ -531,4 +531,17 @@ margin-right: 25px;
 }
 .about-quote-div{
 margin-right: 95px;
+}
+.page-body{
+	margin-bottom: 53px;
+    min-height: 307px;
+}
+.catalog-border{
+	max-width: 760px;
+}
+.promo{
+font-size: 55px;
+font-weight: 500;
+padding-top: 67px;
+text-align: center
 }
