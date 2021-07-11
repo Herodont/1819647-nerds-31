@@ -129,9 +129,12 @@ align-items: center;
 .about{
 	display: flex;
 	justify-content: space-evenly;
+	margin-bottom: 25px;
 }
 .about-description{
 	color: var(--light-black);
+	margin-top: 47px;
+	margin-bottom: 56px;
 }
 .slider-button {
 	width: 240px;
@@ -168,6 +171,8 @@ align-items: center;
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
+    margin-top: 31px;
+    margin-bottom: 31px;
 }
 .contacs-phone{
 	text-decoration: none;
@@ -433,6 +438,9 @@ justify-content: center;
 	display: inline-flex;
 	padding-top: 73px;
 	justify-content: space-evenly;
+	border-top: 2px solid var(--grey);
+    margin-top: 80px;
+    padding-top: 40px;
 }
 .cases{
 display: grid;
@@ -478,6 +486,10 @@ display: grid;
 .cases-row{
 	display: grid;
 	grid-template-columns: 298px 298px 298px 298px;
+	border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    padding-top: 46px;
+    padding-bottom: 46px;
 }
 .cases-item{
 	display: grid;
@@ -568,12 +580,25 @@ margin-right: auto;
 	width: 16px;
     height: 16px;
 }
+.about-servises-list{
+	margin-bottom: 24px;
+	list-style-type: none;
+	position: relative;
+
+}
+
 .about-servises-list::before{
-	content: "";
+	content:"";
     width: 25px;
     height: 2px;
-    background-color: #fb565a;
+    background-color: var(--red);
     position: absolute;
     left: -34px;
     top: 12px;
+}
+.about-servises-title-list{
+	text-transform: uppercase;
+	margin-top: 40px;
+    margin-bottom: 23px;
+	font-weight: bold;
 }
