@@ -26,13 +26,11 @@
 	font-weight: normal;
 	min-height: 100%;
 	grid-template-rows: min-content 1fr min-content;
-	align-centr:start;
 }
 .main-header{
 	background-color: var(--grey);
 	display: flex;
 	justify-content: space-evenly;
-	    margin-bottom: 53px;
  
 }
 .main-footer{
@@ -58,6 +56,7 @@
 	list-style: none;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .nav-item{
 	font-weight: 500;
@@ -88,11 +87,14 @@ align-items: center;
 	opacity: .3;
 }
 .visually-hidden{
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
 .slider{
 	background-color: var(--grey);
@@ -214,13 +216,22 @@ align-items: center;
 .socials-item{
 	background-color: var(--lite-grey);
 	border-radius: 50%;
+	display: grid;
+	place-items: center
 }
+.socials-item:hover{
+background-color: var(--fog-red);
+}
+.socials-item:active{
+	background-color: var(--fog-dark-red);
+	color: rgba(255,255,255,0.3);
+	}
 .cases-item{
 	text-decoration: none;
 	color: rgba(0,0,0, 0.1);
 }
 .slider-button:hover{
-	background-color:var(--fog-red:);
+	background-color:var(--fog-red);
 }
 .slider-button:active{
 	background: var(--fog-dark-red);
@@ -444,15 +455,11 @@ display: grid;
 	margin-left: 140px;
 	margin-right: 218px;
 	margin-top: 0px;
+	font-weight: bold;
 
-}
 }
 .goods-item{
 	display: grid;
-}
-.socials-item{
-	display: grid;
-	place-items: center
 }
 .footer-socials{
 	display: grid;
@@ -489,7 +496,6 @@ display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 100%;
 	overflow: auto;
-	width: ;
 }
 .page-catalog{
 	display: grid;
@@ -501,8 +507,6 @@ display: grid;
 	width: 300px;
 	margin-left: 70px;
 }
-}
-
 .page-numbers{
 	display: grid;
 	gap:10px ;
@@ -557,4 +561,19 @@ margin-right: auto;
 	grid-column: 2;
 	width: 885px;
 	margin-left: 150px;
+}
+.basket-icon{
+
+	margin-right: 25px;
+	width: 16px;
+    height: 16px;
+}
+.about-servises-list::before{
+	content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    position: absolute;
+    left: -34px;
+    top: 12px;
 }
