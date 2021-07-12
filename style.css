@@ -244,6 +244,11 @@ background-color: var(--fog-red);
     position: absolute;
 	left: 294px;
 }
+.cases-item:last-child() {
+	.cases-item:before {
+	display:none;
+	}
+	}
 .slider-button:hover{
 	background-color:var(--fog-red);
 }
