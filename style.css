@@ -244,11 +244,9 @@ background-color: var(--fog-red);
     position: absolute;
 	left: 294px;
 }
-.cases-item:last-child() {
-	.cases-item:before {
+.cases-item:nth-of-type(4n+4)::after{
 	display:none;
-	}
-	}
+}
 .slider-button:hover{
 	background-color:var(--fog-red);
 }
@@ -447,6 +445,7 @@ justify-content: center;
 	display:flex;
 	column-gap: 100px;
 	justify-content: center;
+	padding-top: 80px;
 }
 .index-columns{
 	display: inline-flex;
