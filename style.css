@@ -234,6 +234,15 @@ background-color: var(--fog-red);
 .cases-item{
 	text-decoration: none;
 	color: rgba(0,0,0, 0.1);
+	position: relative;
+}
+.cases-item::after{
+	content: "";
+    width: 2px;
+    height: 52px;
+    background-color:var(--grey);
+    position: absolute;
+	left: 294px;
 }
 .slider-button:hover{
 	background-color:var(--fog-red);
