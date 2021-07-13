@@ -45,21 +45,34 @@
 	<main class="page-catalog-area">
 		<div class="page-catalog">
 			<section class="filter-conf">
-			<form action="https://echo.htmlacademy.ru/" method="get">
-				<h2 class="visually-hidden">Фильтр</h2>
-
-				<fieldset class="fieldset-cost">
-					<legend>Стоимость</legend>
-					<div class="cost-slider">
-					<input type="range">	
-					<input type="range">
-					</div>
-					<br>
-					От
-					<input class="cost-input" type="number" id="from" value="0">
-					До
-					<input class="cost-input" type="number" id="to" value="15 000">
-				</fieldset>
+				<form method="get" action="https://echo.htmlacademy.ru">
+					<fieldset class="filter-item">
+						<legend>Стоимость:</legend>
+						<div class="range-filter">
+						  <div class="range-controls">
+							<div class="scale">
+							  <div class="bar" style="
+								width: 30%;
+								margin-left: 20%
+							  "></div>
+							</div>
+							<div class="toggle toggle-min" tabindex="0" style="
+							  left: 20%
+							"></div>
+							<div class="toggle toggle-max" tabindex="0" style="
+							  left: 50%
+							"></div>
+						  </div>
+						  <div class="price-controls">
+							<label class="min-price">
+							  от <input type="number" name="min-price" value="0">
+							</label>
+							<label class="max-price">
+							  до <input type="number" name="max-price" value="15000">
+							</label>
+						  </div>
+						</div>
+					</fieldset>
 				<fieldset class="grid">
 					<legend class="fieldset-grid">Сетка</legend>
 					<ul class="list">
