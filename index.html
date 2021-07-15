@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!--Извините, не успеваю завершить все необходимые элементы. На работе появились дополнительные обязательства и-за чего из жизни выпало много времени.
+     Я обещаю, что к следующей попытке завершу всё оставшееся. —_— Спасибо -->
 <html class="page" lang="ru">
 
 <head>
@@ -42,38 +44,64 @@
             </div>
         </nav>
     </header>
+    <section class="slider">
+        <ul class="slider-list">
+            <li class="slider-item slide slider-curent">
+                <div class="slide-text">
+                    <h3 class="slider-title">
+                        Долго, дорого,<br>скрупулезно.
+                    </h3>
+                    <p class="slider-description">
+                        Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
+                    </p>
+                    <a class="slider-button" href="#">Узнать больше</a>
+                </div>
+                <div slide-img>
+                    <img src="img/slider/nerds-index-slide11.png">
+                </div>
+            </li>
+            <li class="slider-item slide">
+                <div class="slide-text"></div>
+                <h3 class="slider-title">
+                    Любим математику<br>как никто другой
+                </h3>
+                <p class="slider-description">
+                    Никакого креатива, только математические формулы<br>для расчета идеальных пропорций
+                </p>
+                <a class="slider-button" href="#">Узнать больше</a>
+                </div>
+                <div slide-img>
+                    <img src="img/slider/nerds-index-slide21.png">
+                </div>
+            </li>
+            <li class="slider-item slide">
+                <div class="slide-text"></div>
+                <h3 class="slider-title">
+                    Только ночь,<br>только хардкор
+                </h3>
+                <p class="slider-description">
+                    Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+                </p>
+                <a class="slider-button" href="#">Узнать больше</a>
+                </div>
+                <div slide-img>
+                    <img src="img/slider/nerds-index-slide31.png">
+                </div>
+            </li>
+        </ul>
+        <div class="slider-controls">
+            <button class="slider-controls-button" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-controls-button" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-controls-button" type="button" aria-label="Третий слайд"></button>
+        </div>
+
+
+
+
+
+    </section>
     <main class="container">
         <h1 class="visually-hidden">Веб-студия «Нёрдс»</h1>
-        <section class="slider ">
-            <div>
-                <h2 class="visually-hidden ">Преимущества</h2>
-                <input class="visually-hidden " type="radio " id="page-1 " name="toggle " checked=" ">
-                <input class="visually-hidden " type="radio " id="page-2 " name="toggle ">
-                <input class="visually-hidden " type="radio " id="page-3 " name="toggle ">
-                <div class="slider-controls ">
-                    <label class="slider-radio slider-radio-1 " for="page-1 ">Первый</label>
-                    <label class="slider-radio slider-radio-2 " for="page-2 ">Второй</label>
-                    <label class="slider-radio slider-radio-3 " for="page-3 ">Третий</label>
-                </div>
-                <ul class="slider-list ">
-                    <li class="slider-items ">
-                        <h3>Долго, дорого,<br> скрупулезно.</h3>
-                        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                        <button class="slider-button " href="# ">Узнать больше</button>
-                    </li>
-                    <li class="slider-items slide-current ">
-                        <h3>Любим математику как никто другой</h3>
-                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                        <a class="slider-button " href="# ">Узнать больше</a>
-                    </li>
-                    <li class="slider-items ">
-                        <h3>Только ночь,<br> только хардкор</h3>
-                        <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-                        <a class="slider-button " href="# ">Узнать больше</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
         <section class="services">
             <h2 class="visually-hidden">Услуги агенства</h2>
             <div class="services-item">
@@ -188,30 +216,56 @@
             <p class="footer-slogan-bot">Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    <section class="modal">
-        <h2 class="modal-title">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+    <!----
+    <section class="modal modal-login">
+        <h2>Напишите нам</h2>
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="wrapper">
+                <p>
+                    <label for="user-name"><b>Ваше имя:</b></label>
+                    <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" required="" autofocus="">
+                </p>
+                <p>
+                    <label for="user-email"><b>Ваш e-mail</b></label>
+                    <input type="email" name="user-email" id="user-email" placeholder="Для отправки ответа" required="">
+                </p>
+            </div>
             <p>
-                <label class="modal-subtitle" for="form-name" id="name-name">Ваше имя:</label>
-                <br>
-                <input class="name-name" id="form-name" type="name" name="name" placeholder="Имя Фамилия">
+                <label for="contact-text"><b>Текст письма:</b></label>
+                <textarea name="text" id="contact-text" rows="5" cols="250" placeholder="В свободной форме" required=""></textarea>
             </p>
-            <p>
-                <label class="modal-subtitle" for="form-email">Ваш email:</label>
-                <br>
-                <input class="form-email" id="form-email" type="email" name="email" placeholder="email@example.com">
-            </p>
-            <p>
-                <label class="modal-subtitle" for="form-text">Текст письма:</label>
-                <br>
-                <textarea class="form-text" id="form-text" name="text" placeholder="В свободной форме"></textarea>
-            </p>
-            <p>
-                <button class="form-button button" type="submit" value="Отправить" id="button-form">Отправить
-				</button>
-            </p>
+            <button class="button" type="submit">Отправить</button>
+            <a href="https://nerds2.github.io/#" class="modal-close">Закрыть</a>
         </form>
     </section>
+-->
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
