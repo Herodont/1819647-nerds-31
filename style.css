@@ -115,6 +115,20 @@
     overflow: hidden;
 }
 
+.slider-features {
+    background-color: var(--grey);
+}
+
+.slider-img {
+    width: 760px;
+    height: 431px;
+}
+
+.slider-title {
+    font-weight: 500;
+    font-size: 55px;
+}
+
 .services-title {
     font-weight: bold;
     font-size: 24px;
@@ -123,6 +137,13 @@
 
 .services-item {
     width: 300px;
+}
+
+.slider-description {
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    color: var(--light-black);
 }
 
 .services-description {
@@ -209,8 +230,6 @@
     font-size: 45px;
 }
 
-
-/*
 .modal-title {
     font-size: 45px;
 }
@@ -218,7 +237,6 @@
 .modal-subtitle {
     font-weight: bold;
 }
-*/
 
 .name-name {
     width: 360px;
@@ -311,7 +329,7 @@
 }
 
 .form-button:hover {
-    background-color: var(--fog-red);
+    background-color: #E74246;
 }
 
 .form-button:active {
@@ -690,7 +708,7 @@
     background-color: var(--red);
     position: absolute;
     left: -34px;
-    top: 8px;
+    top: 12px;
 }
 
 .about-servises-title-list {
@@ -863,46 +881,122 @@
 
 /* слайдер*/
 
+
+/*
 .slider {
-    background-color: var(--grey);
+    position: relative;
+    background-color: #eee
+}
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    width: 160px;
+    height: 18px;
+    text-align: center;
+    font-size: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.slider-controls label {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.slider-controls label::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    border-radius: 50%
+}
+
+#page-1:checked~.slider-controls .slider-radio-1::before,
+#page-2:checked~.slider-controls .slider-radio-2::before,
+#page-3:checked~.slider-controls .slider-radio-3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%
+}
+
+.slider-items {
+    display: none;
+}
+
+.slide-current {
+    display: block;
+}
+
+.slider-items h3 {
+    padding: 0;
+    margin: 0 0 27px;
+    max-width: 600px;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500
+}
+
+.slider-items p {
+    max-width: 430px;
+    margin: 0 0 38px
+}
+
+.slider-items:nth-child(1) {
+    background-image: url(img/slider/nerds-index-slide11.png);
+    background-repeat: no-repeat;
+    background-position: 93% -16px
+}
+
+.slider-items:nth-child(2),
+.slider-items:nth-child(3) {
+    background-image: url(img/slider/nerds-index-slide21.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0
+}
+
+.slider-items:nth-child(3) {
+    background-image: url(img/slider/nerds-index-slide31.png);
+    background-position: 100% 20px
+}
+
+#page-1:checked~.slider-list .slider-items:nth-child(1),
+#page-2:checked~.slider-list .slider-items:nth-child(2),
+#page-3:checked~.slider-list .slider-items:nth-child(3) {
+    display: block
 }
 
 .slider-list {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-.slider-title {
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 37px;
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 500;
-}
-
-.slider-description {
-    max-width: 416px;
-    margin: 0 0 38px;
-    font-size: 16px;
-    line-height: 24px;
+    list-style: none
 }
 
 .slider-button {
-    display: block;
-    width: 240px;
-    padding: 16px 0;
-    font-size: 16px;
-    line-height: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--red);
-    border-radius: 3px;
-    border: 0;
-    cursor: pointer;
+    width: 219px;
+    height: 50px;
+    color: var(--white);
+    background: var(--red);
 }
 
 .slider-button:hover {
@@ -915,23 +1009,126 @@
     background-color: var(--fog-dark-red);
 }
 
-.slider-controls-button {
-    width: 18px;
-    height: 18px;
-    color: var(--white);
+.slider-button:active {
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, .3);
+}
+*/
+
+.modal {
+    position: fixed;
+    width: 960px;
+    height: 590px;
+}
+
+
+/* ___ container.scss */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel__slides {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    /* Листаются только полноценные слайды (слайд не может остановиться на полпути) */
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    /* Убирем скролл */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+.carousel__slides::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.carousel__slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.carousel__slides:-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+
+.carousel__slide {
+    scroll-snap-align: start;
+    flex: 1 0 100%;
+}
+
+.carousel__dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20px;
+    grid-auto-rows: 20px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carousel__dot {
+    font-size: 0;
+    display: block;
+    background-color: black;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-    border: 2px solid var(--basic-black);
-    cursor: pointer;
+}
+
+.carousel__dot--active {
+    background-color: #d22856;
 }
 
 .slide {
-    display: none;
+    position: relative;
+    margin: 0;
 }
 
-.slider-curent {
-    display: block;
+.slide__name {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: black;
+    width: 70%;
+    top: 20px;
+    left: 20px;
 }
 
-.slider-item {
-    width: 600px;
+.slide__description {
+    color: black;
+    width: 70%;
+    font-size: 3rem;
+    top: 70px;
+    left: 20px;
+}
+
+.slide__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
