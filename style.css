@@ -32,8 +32,9 @@
 
 .main-header {
     background-color: var(--grey);
-    display: flex;
-    justify-content: space-evenly;
+    min-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-footer {
@@ -43,14 +44,16 @@
 
 .wraper {
     display: flex;
-    margin-top: 20px;
+    padding-top: 50px;
 }
 
 .main-navigation {
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 63px;
+    padding-bottom: 63px;
+    background-color: var(--grey);
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-header-logo:hover {
@@ -113,20 +116,6 @@
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
-}
-
-.slider-features {
-    background-color: var(--grey);
-}
-
-.slider-img {
-    width: 760px;
-    height: 431px;
-}
-
-.slider-title {
-    font-weight: 500;
-    font-size: 55px;
 }
 
 .services-title {
@@ -1025,7 +1014,7 @@
 /* ___ container.scss */
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1040,6 +1029,9 @@
 
 .carousel {
     position: relative;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel__slides {
@@ -1074,6 +1066,8 @@
 .carousel__slide {
     scroll-snap-align: start;
     flex: 1 0 100%;
+    height: 431px;
+    min-width: 900px;
 }
 
 .carousel__dots {
@@ -1094,14 +1088,14 @@
 .carousel__dot {
     font-size: 0;
     display: block;
-    background-color: black;
+    background-color: var(--white);
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
 
 .carousel__dot--active {
-    background-color: #d22856;
+    background-color: var(--basic-black);
 }
 
 .slide {
@@ -1120,15 +1114,20 @@
 }
 
 .slide__description {
-    color: black;
-    width: 70%;
-    font-size: 3rem;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
     top: 70px;
     left: 20px;
+    margin-bottom: 38px;
 }
 
 .slide__img {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.slider {
+    background-color: var(--grey);
 }
