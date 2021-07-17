@@ -34,7 +34,7 @@
                     </ul>
                 </div>
                 <div class="basket">
-                    <img class="basket-icon" src="img/cart-icon.svg" alt="значок корзины" href="#">
+                    <input type="image" class="basket-icon" src="img/cart-icon.svg" alt="значок корзины">
                     <a class="nav-item" href="#">
 				Корзина
 			</a>
@@ -43,26 +43,26 @@
             </div>
         </nav>
     </header>
-
     <main class="container">
         <section class="slider">
+            <h2 class="visually-hidden">Цитаты о нас</h2>
             <article class="carousel">
                 <div class="carousel__slides">
-                    <figure class="carousel__slide slide" id="slide0"><img class="slide__img" src="img/slider/nerds-index-slide11.png" />
+                    <figure class="carousel__slide slide" id="slide0"><img class="slide__img" src="img/slider/nerds-index-slide11.png" alt="Смартфоны" />
                         <h2 class="slide__name">Долго, дорого,<br> скрупулезно
                         </h2>
                         <p class="slide__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                        <button type="button" class="button-adress button" id="adress-button">Узнать больше</button>
+                        <button type="button" class="button-adress button" id="first-slider-button">Узнать больше</button>
                     </figure>
-                    <figure class="carousel__slide slide" id="slide1"><img class="slide__img" src="img/slider/nerds-index-slide21.png" />
+                    <figure class="carousel__slide slide" id="slide1"><img class="slide__img" src="img/slider/nerds-index-slide21.png" alt="Экраны" />
                         <h2 class="slide__name">Любим математику<br> как никто другой</h2>
                         <p class="slide__description">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-                        <button type="button" class="button-adress button" id="adress-button">Узнать больше</button>
+                        <button type="button" class="button-adress button" id="secound-slider-butto">Узнать больше</button>
                     </figure>
-                    <figure class="carousel__slide slide" id="slide2"><img class="slide__img" src="img/slider/nerds-index-slide31.png" />
+                    <figure class="carousel__slide slide" id="slide2"><img class="slide__img" src="img/slider/nerds-index-slide31.png" alt="Смартфон и планшет" />
                         <h2 class="slide__name">Только ночь,<br> только хардкор</h2>
                         <p class="slide__description">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается</p>
-                        <button type="button" class="button-adress button" id="adress-button">Узнать больше</button>
+                        <button type="button" class="button-adress button" id="therd-slider-butto">Узнать больше</button>
                     </figure>
                 </div>
                 <ul class="carousel__dots">
@@ -158,17 +158,19 @@
                 </a>
             </div>
         </section>
-        <section class="map">
+        <section class="map container">
             <h2 class="visually-hidden">Карта</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.6091744177047!2d30.320843325173435!3d59.93819686362255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1516047252825"
+            <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.6091744177047!2d30.320843325173435!3d59.93819686362255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1516047252825"
                 width="1200" height="450" style="border:0" allowfullscreen=""></iframe>
-            <div class="address-block-form">
-                <address>	
+            <div class="addres-container">
+                <address class="address-plate">
+                    <strong class="address-h3">NЁRDS DESIGN STUDIO</strong>    
                             <p class="address-streat">
                                 наб. Реки Карповки,<br>
                                 5 лит П, Санкт-Петербург
                             </p>
                             <a class="contacs-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                            <button type="button" class="button-adress button" id="adress-button">Напишите нам</button>
                         </address>
             </div>
         </section>
@@ -210,7 +212,7 @@
 
 
 
-<!----
+<!--
     <section class="modal modal-login">
         <h2>Напишите нам</h2>
         <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
