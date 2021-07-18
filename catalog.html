@@ -53,11 +53,11 @@
                             <input class="range-slider__input" type="range" min="0" max="20000" value="15000" step="100" data-id="b" />
                             <div class="range-slider__progress"></div>
                         </div>
-                        <label class="cost__label">От
-                          <input class="cost__output" type="number" min="0" max="20000" value="0" step="100"/>
+                        <label class="cost__label" for="from">От
+                          <input class="cost__output" type="number" min="0" max="20000" value="0" step="100" id="from"/>
                         </label>
-                        <label class="cost__label">До
-                          <input class="cost__output" type="number" min="0" max="20000" value="15000"/>
+                        <label class="cost__label" for="to">До
+                          <input class="cost__output" type="number" min="0" max="20000" value="15000" id="to"/>
                         </label>
                     </fieldset>
                     <fieldset class="grid">
@@ -118,9 +118,9 @@
                     </div>
                     <div class="sorting-buttons">
                         <button class="sort-button triangle" type="button" id="up"><img src="img/shape(1).svg"
-							alt="По возрастанию"></button>
+							alt="По возрастанию" width="11" height="11"></button>
                         <button class="sort-button triangle" type="button" id="down"><img src="img/shape.svg"
-							alt="По убыванию"></button>
+							alt="По убыванию" width="11" height="11"></button>
                     </div>
                 </section>
                 <h2 class="visually-hidden">Список шаблонов</h2>
