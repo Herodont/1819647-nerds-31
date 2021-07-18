@@ -20,6 +20,7 @@
     --gray-like-you: #f1f1f1;
     --gray-rang: #d7dcde;
     --gray-cf: #cfcfcf;
+    --gray-check: #4d4d4d;
 }
 
 .page {
@@ -803,8 +804,13 @@
     position: absolute;
     left: -39px;
     top: 0;
-    border: 2px solid var(--gray-like-me);
+    border: 2px solid var(--gray-check);
     border-radius: 5px;
+    opacity: 0.4;
+}
+
+.filter-input-checkbox:hover+label::before {
+    opacity: 1;
 }
 
 .filter-conf label {
@@ -1444,9 +1450,14 @@
     position: absolute;
     left: -33px;
     top: 3px;
-    background-image: url("img/checked.svg");
+    background-image: url("/img/checked.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.4;
+}
+
+.filter-input-checkbox:checked:hover+label::after {
+    opacity: 1;
 }
 
 .goods-button {
@@ -1475,4 +1486,9 @@
 
 .goods-item-li:hover .goods-head {
     opacity: 1;
+}
+
+.page-selected {
+    background-color: var(--white);
+    outline: 2px solid var(--grey);
 }
