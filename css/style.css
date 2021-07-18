@@ -405,6 +405,7 @@
     border-radius: 3px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 
 .button-adress:active {
@@ -540,14 +541,19 @@
 .goods-item-text {
     background-color: var(--grey);
     text-align: center;
-    width: 358px;
+    width: 360px;
     height: 231px;
     position: absolute;
-    top: 391px;
+    display: none;
+    bottom: 0;
 }
 
 .goods-item {
-    width: 359px;
+    width: 360px;
+}
+
+.goods-item:hover .goods-item-text {
+    display: block;
 }
 
 .page {
@@ -1461,4 +1467,12 @@
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     color: rgba(255, 255, 255, .3);
     background-color: var(--fog-dark-red);
+}
+
+.goods-head {
+    opacity: 0.3;
+}
+
+.goods-item-li:hover .goods-head {
+    opacity: 1;
 }
