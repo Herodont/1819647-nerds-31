@@ -9,17 +9,19 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="main-body">
-    <header class="main-header">
-        <nav class="main-navigation">
 
+
+
+    <header class="main-header-catalog container">
+        <nav class="main-navigation">
             <div class="wraper">
                 <a href="index.html">
                     <img class="main-header-logo" src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="159" height="65">
@@ -34,13 +36,12 @@
                 </div>
                 <div class="basket">
                     <input type="image" class="basket-icon" src="img/cart-icon.svg" alt="значок корзины">
-                    <a class="nav-item basket-text" href="#">
-						Корзина
-					</a>
+                    <a class="nav-item-basket" href="#">
+				Корзина
+			</a>
                 </div>
 
             </div>
-
             <h1 class="promo">Магазин готовых шаблонов</h1>
         </nav>
     </header>
@@ -49,33 +50,20 @@
             <section class="filter-conf">
                 <h2 class="visually-hidden">Конфигуратор фильтра</h2>
                 <form method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset class="filter-item">
-                        <legend>Стоимость:</legend>
-                        <div class="range-filter">
-                            <div class="range-controls">
-                                <div class="scale">
-                                    <div class="bar" style="
-								width: 30%;
-								margin-left: 20%
-							 "></div>
-                                </div>
-                                <div class="toggle toggle-min" tabindex="0" style="
-							  left: 20%
-							"></div>
-                                <div class="toggle toggle-max" tabindex="0" style="
-							  left: 50%
-							"></div>
-                            </div>
-                            <div class="price-controls">
-                                <label class="min-price">
-									от <input type="number" name="min-price" value="0">
-								</label>
-                                <label class="max-price">
-									до <input type="number" name="max-price" value="15000">
-								</label>
-                            </div>
+                    <fiedlset class="cost">
+                        <legend class="filter-headline">Стоимость:</legend>
+                        <div class="range-slider cost__range" style="--min:0; --max:20000; --prefix:&quot;$&quot; --value-a:0; --value-b:15000;">
+                            <input class="range-slider__input" type="range" min="0" max="20000" value="0" step="100" data-id="a" />
+                            <input class="range-slider__input" type="range" min="0" max="20000" value="15000" step="100" data-id="b" />
+                            <div class="range-slider__progress"></div>
                         </div>
-                    </fieldset>
+                        <label class="cost__label">От
+                          <input class="cost__output" type="number" min="0" max="20000" value="0" step="100"/>
+                        </label>
+                        <label class="cost__label">До
+                          <input class="cost__output" type="number" min="0" max="20000" value="15000"/>
+                        </label>
+                    </fiedlset>
                     <fieldset class="grid">
                         <legend class="fieldset-grid">Сетка</legend>
                         <ul class="list">
@@ -133,9 +121,9 @@
                         <button class="sort-button" type="button" id="name">По названию</button>
                     </div>
                     <div class="sorting-buttons">
-                        <button class="sort-button triangle" type="button" id="up"><img src="img/Shape(1).svg"
+                        <button class="sort-button triangle" type="button" id="up"><img src="img/shape(1).svg"
 							alt="По возрастанию"></button>
-                        <button class="sort-button triangle" type="button" id="down"><img src="img/Shape.svg"
+                        <button class="sort-button triangle" type="button" id="down"><img src="img/shape.svg"
 							alt="По убыванию"></button>
                     </div>
                 </section>
@@ -306,3 +294,4 @@
 </body>
 
 </html>
+<script src="js/cost-configurator.js"></script>
