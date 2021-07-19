@@ -1216,6 +1216,7 @@
     border: none;
     text-align: center;
     padding: 8px;
+    max-width: 80px;
 }
 
 .range-slider {
