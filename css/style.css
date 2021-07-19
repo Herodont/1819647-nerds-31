@@ -100,7 +100,19 @@
     text-decoration: none;
     color: var(--basic-black);
     margin-right: 20px;
-    margin-top: 10px
+    margin-top: 10px;
+    position: relative;
+}
+
+.nav-item-basket::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -33px;
+    background-image: url(/img/cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .nav-item-basket:hover {
