@@ -110,7 +110,7 @@
     height: 15px;
     position: absolute;
     left: -33px;
-    background-image: url(/img/cart-icon.svg);
+    background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -185,7 +185,8 @@
 }
 
 .services-item::before {
-    background-image: url("img/illustration-31.jpg");
+    background-image: url(""..img/illustration-31.jpg");
+
 }
 
 .slider-description {
@@ -1050,7 +1051,7 @@
 }
 
 .carousel__dot--active {
-    background-image: url(/img/ellipse.svg);
+    background-image: url("../img/ellipse.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -1099,7 +1100,7 @@
 
 .map {
     margin-top: 80px;
-    background-image: url(../img/map.jpg);
+    background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     background-position: 50% 42%;
     background-size: cover;
@@ -1491,7 +1492,7 @@
     position: absolute;
     left: -33px;
     top: 3px;
-    background-image: url("/img/checked.svg");
+    background-image: url("../img/checked.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
