@@ -21,6 +21,7 @@
     --gray-rang: #d7dcde;
     --gray-cf: #cfcfcf;
     --gray-check: #4d4d4d;
+    --gray-slider: #C1C1C1;
 }
 
 .page {
@@ -171,6 +172,10 @@
     width: 300px;
 }
 
+.services-item::before {
+    background-image: url("img/illustration-31.jpg");
+}
+
 .slider-description {
     font-style: normal;
     font-weight: normal;
@@ -234,6 +239,7 @@
 }
 
 .footer-slogan-top {
+    font-weight: bold;
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -429,6 +435,10 @@
     list-style-type: none;
 }
 
+.sort-button .triangle {
+    margin: 0;
+}
+
 .button-show {
     width: 260px;
     height: 50px;
@@ -451,6 +461,7 @@
     text-transform: uppercase;
     opacity: 0.3;
     margin-right: 13px;
+    font-size: 14px;
 }
 
 .sort-button:hover {
@@ -506,6 +517,8 @@
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: var(--grey);
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .background-h1 {
@@ -960,6 +973,7 @@
     max-width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    scrollbar-width: none;
 }
 
 .carousel__slides {
@@ -974,6 +988,8 @@
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-color: transparent;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
 }
 
 .carousel__slides::-webkit-scrollbar {
@@ -1006,8 +1022,8 @@
     padding: 0;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 20px;
-    grid-auto-rows: 20px;
+    grid-auto-columns: 18px;
+    grid-auto-rows: 18px;
     justify-content: center;
     gap: 15px;
 }
@@ -1022,7 +1038,9 @@
 }
 
 .carousel__dot--active {
-    background-color: var(--light-black);
+    background-image: url(/img/ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .slide {
@@ -1174,6 +1192,7 @@
     justify-content: space-between;
     gap: 14px;
     border: 0 none;
+    padding-left: 0px;
 }
 
 .cost__range {
@@ -1191,7 +1210,7 @@
 }
 
 .cost__output {
-    margin-left: 12px;
+    margin-left: px;
     background: var(--grey);
     border-radius: 3px;
     border: none;
@@ -1367,8 +1386,9 @@
     background-color: var(--white);
     position: fixed;
     top: 40px;
-    left: 400px;
-    right: 400px;
+    left: 0;
+    right: 0;
+    display: none;
 }
 
 .form-feedback__content-wrapper {
@@ -1408,6 +1428,10 @@
     line-height: 53px;
 }
 
+.form-input::placeholder {
+    padding-left: 16px;
+}
+
 .form-input {
     width: 360px;
     height: 50px;
@@ -1416,6 +1440,10 @@
 .form-textarea {
     width: 760px;
     height: 118px;
+}
+
+.form-textarea::placeholder {
+    padding-top: 16px;
 }
 
 .button-close {
@@ -1482,6 +1510,7 @@
 
 .goods-head {
     opacity: 0.3;
+    width: 358px;
 }
 
 .goods-item-li:hover .goods-head {
